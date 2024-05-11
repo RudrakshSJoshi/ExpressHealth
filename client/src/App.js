@@ -16,10 +16,13 @@ const Detection = lazy(() => import("./pages/Detection"));
 const Doctors = lazy(() => import("./pages/Doctors"));
 const Profile = lazy(() => import("./pages/Profile"));
 const Notifications = lazy(() => import("./pages/Notifications"));
+const Prescriptions = lazy(() => import("./pages/Prescriptions"));
+const Gallery = lazy(() => import("./pages/Gallery"));
 const ApplyDoctor = lazy(() => import("./pages/ApplyDoctor"));
 const Error = lazy(() => import("./pages/Error"));
 
 function App() {
+	const types = ["chest", "brainMri", "eyeOct"];
 	return (
 		<Router>
 			<Toaster />
@@ -60,6 +63,38 @@ function App() {
 							</Protected>
 						}
 					/>
+					{/*	Prescripions are below*/}
+					<Route
+						path="/prescriptions"
+						element={
+							<Protected>
+								<Notifications />
+							</Protected>
+						}
+					/>
+					{/*	Prescripions Ends here*/}
+					{/*	Gallery starts here*/}
+					<Route
+						path="/gallery"
+						element={
+							<Protected>
+								<Gallery />
+							</Protected>
+						}
+					/>
+					{/*	Gallery Ends here*/}
+					{types.map((type) => (
+						<Route
+							key={type} // Add key prop here with a unique value
+							path={`/gallery/${type}`}
+							element={
+								<Protected>
+									<Gallery type={type} />
+								</Protected>
+							}
+						/>
+					))}
+
 					<Route
 						path="/applyfordoctor"
 						element={

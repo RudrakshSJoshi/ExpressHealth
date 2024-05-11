@@ -60,11 +60,26 @@ const Navbar = () => {
 									</NavLink>
 								</li>
 							) : null}
+							{user.isDoctor === false ? (
+								<li>
+									<NavLink to={"/prescriptions"}>
+										Prescription
+									</NavLink>
+								</li>
+							) : null}
 
 							{user.isDoctor === true ? (
 								<li>
 									<NavLink to={"/appointments"}>
 										Appointments
+									</NavLink>
+								</li>
+							) : null}
+
+							{user.isDoctor === true ? (
+								<li>
+									<NavLink to={"/gallery"}>
+										Gallery
 									</NavLink>
 								</li>
 							) : null}

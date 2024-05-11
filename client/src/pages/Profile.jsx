@@ -170,9 +170,6 @@ function Profile() {
 									placeholder="Gender"
 									onChange={inputChange}
 								>
-									<option value="neither">
-										Rather Not Say
-									</option>
 									<option value="male">Male</option>
 									<option value="female">Female</option>
 								</select>
