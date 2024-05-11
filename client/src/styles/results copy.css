@@ -1,0 +1,50 @@
+p {
+  border-bottom: 2px solid black;
+  margin-bottom: 2.7rem;
+  padding: 0 1rem;
+}
+
+table {
+  padding-top: 30px;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+}
+td {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  min-height: 100px;
+  padding: 15px 15px;
+  line-height: 33px;
+}
+
+.table-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  background-color: #ffffff !important;
+}
+
+.table-header th {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 5px solid #000;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+tr:nth-child(odd) {
+  background-color: #9f9fa8;
+}
+.diseaseName {
+  width: 30%;
+}
+.accuracy {
+  width: 20%;
+}
+.doctorSpecialization {
+  width: 50%;
+}

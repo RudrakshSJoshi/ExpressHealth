@@ -45,7 +45,6 @@ const Navbar = () => {
 							<NavLink to={"/dashboard/users"}>Dashboard</NavLink>
 						</li>
 					)}
-
 					{token && !user.isAdmin && (
 						<>
 							<li>
@@ -53,6 +52,13 @@ const Navbar = () => {
 									Detect Disease
 								</NavLink>
 							</li>
+							{user.isDoctor === false ? (
+								<li>
+									<NavLink to={"/symptomcheck"}>
+										Symptom Checker
+									</NavLink>
+								</li>
+							) : null}
 							{user.isDoctor === false ? (
 								<li>
 									<NavLink to={"/applyfordoctor"}>
@@ -75,12 +81,16 @@ const Navbar = () => {
 									</NavLink>
 								</li>
 							) : null}
+							{/** Gallery meant for Doctors only, MRI wagera wagera */}
+							{user.isDoctor === true ? (
+								<li>
+									<NavLink to={"/gallery"}>Gallery</NavLink>
+								</li>
+							) : null}
 
 							{user.isDoctor === true ? (
 								<li>
-									<NavLink to={"/gallery"}>
-										Gallery
-									</NavLink>
+									<NavLink to={"/discussion"}>Discussion</NavLink>
 								</li>
 							) : null}
 

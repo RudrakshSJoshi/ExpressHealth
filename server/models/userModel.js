@@ -38,11 +38,12 @@ const schema = mongoose.Schema(
 		},
 		gender: {
 			type: String,
-			default: "Neither",
+			default: "Male",
+			length: 10,
 		},
 		mobile: {
 			type: Number,
-			default: "",
+			default: 0,
 		},
 		address: {
 			type: String,
