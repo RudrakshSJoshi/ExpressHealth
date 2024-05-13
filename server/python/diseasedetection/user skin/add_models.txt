@@ -1,4 +1,4 @@
-Add the Python Models in this same exact directory 
+Add the Python Models in this same exact directory from the drive link provided in README.md file
 
 Models are named as  : 
 1. brain_tumour.h5
