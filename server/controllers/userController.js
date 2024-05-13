@@ -44,6 +44,8 @@ const login = async (req, res) => {
 				userId: emailPresent._id,
 				isAdmin: emailPresent.isAdmin,
 				isDoctor: emailPresent.isDoctor,
+				firstName: emailPresent.firstname,
+				lastName: emailPresent.lastname,
 			},
 			process.env.JWT_SECRET,
 			{

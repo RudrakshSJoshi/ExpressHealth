@@ -1,19 +1,15 @@
 /** @format */
 
-import React, { Component } from "react";
+import React, { useEffect } from "react";
+import jwt_decode from "jwt-decode";
 
-import Kommunicate from "@kommunicate/kommunicate-chatbot-plugin";
-Kommunicate.init("226867b32d13db20cf2a6a32f37368e3b", {
-	automaticChatOpenOnNavigation: true,
-	popupWidget: true,
-});
+const KommunicateChat = () => {
+	const token = localStorage.getItem("token") || "";
+	const user = localStorage.getItem("token")
+		? jwt_decode(localStorage.getItem("token"))
+		: "";
 
-class KommunicateChat extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	componentDidMount() {
+	useEffect(() => {
 		(function (d, m) {
 			var kommunicateSettings = {
 				appId: "226867b32d13db20cf2a6a32f37368e3b",
@@ -29,10 +25,9 @@ class KommunicateChat extends Component {
 			window.kommunicate = m;
 			m._globals = kommunicateSettings;
 		})(document, window.kommunicate || {});
-	}
-	render() {
-		return <div></div>;
-	}
-}
+	}, []);
+
+	return <div></div>;
+};
 
 export default KommunicateChat;

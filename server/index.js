@@ -15,6 +15,7 @@ const doctorRouter = require("./routes/doctorRoutes");
 const appointRouter = require("./routes/appointRoutes");
 const path = require("path");
 const notificationRouter = require("./routes/notificationRouter");
+const prescriptionRouter = require("./routes/prescriptionRoutes");
 
 const app = express();
 const port = process.env.PORT || 8000;
@@ -29,6 +30,7 @@ app.use("/api/user", userRouter);
 app.use("/api/doctor", doctorRouter);
 app.use("/api/appointment", appointRouter);
 app.use("/api/notification", notificationRouter);
+app.use("/api/prescription", prescriptionRouter);
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", (req, res) => {

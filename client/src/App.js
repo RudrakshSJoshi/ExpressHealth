@@ -8,9 +8,6 @@ import { Toaster } from "react-hot-toast";
 import { Protected, Public, Admin } from "./middleware/route";
 import React, { lazy, Suspense } from "react";
 import Loading from "./components/Loading";
-import jwt_decode from "jwt-decode";
-import { useState } from "react";
-import KommunicateChat from "./components/KommunicateChat";
 
 const Home = lazy(() => import("./pages/Home"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
@@ -23,25 +20,14 @@ const Prescriptions = lazy(() => import("./pages/Prescriptions"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const ApplyDoctor = lazy(() => import("./pages/ApplyDoctor"));
 const Error = lazy(() => import("./pages/Error"));
-const SymptomCheck = lazy(() => import("./pages/SymptomCheck"));
+const AddPrescription = lazy(() => import("./pages/AddPrescription"));
 
 function App() {
-	const [token, setToken] = useState(localStorage.getItem("token") || "");
-	const [user, setUser] = useState(
-		localStorage.getItem("token")
-			? jwt_decode(localStorage.getItem("token"))
-			: ""
-	);
-
-	console.log(user);
+	// console.log(user);
 
 	const types = ["chest", "brainMri", "eyeOct"];
 	return (
 		<>
-			{token && user.isAdmin === false && user.isDoctor === false ? (
-				<KommunicateChat />
-			) : null}
-
 			<Router>
 				<Toaster />
 				<Suspense fallback={<Loading />}>
@@ -65,14 +51,7 @@ function App() {
 								</Protected>
 							}
 						/>
-						<Route
-							path="/symptomcheck"
-							element={
-								<Protected>
-									<SymptomCheck/>
-								</Protected>
-							}
-						/>
+
 						<Route
 							path="/diseasedetect"
 							element={
@@ -90,14 +69,25 @@ function App() {
 							}
 						/>
 						{/*	Prescripions are below*/}
+
+						<Route
+							path="/prescription_upload"
+							element={
+								<Protected>
+									< AddPrescription/>
+								</Protected>
+							}
+						/>
+
 						<Route
 							path="/prescriptions"
 							element={
 								<Protected>
-									<Notifications />
+									<Prescriptions />
 								</Protected>
 							}
 						/>
+
 						{/*	Prescripions Ends here*/}
 						{/*	Gallery starts here*/}
 						<Route

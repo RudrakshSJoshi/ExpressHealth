@@ -54,9 +54,9 @@ const Navbar = () => {
 							</li>
 							{user.isDoctor === false ? (
 								<li>
-									<NavLink to={"/symptomcheck"}>
-										Symptom Checker
-									</NavLink>
+									<a href="https://symtoms-check-iz04mtjaz-pratham-aggarwals-projects.vercel.app">
+										Symptoms Check
+									</a>
 								</li>
 							) : null}
 							{user.isDoctor === false ? (
@@ -69,15 +69,21 @@ const Navbar = () => {
 							{user.isDoctor === false ? (
 								<li>
 									<NavLink to={"/prescriptions"}>
-										Prescription
+										History
 									</NavLink>
 								</li>
 							) : null}
-
 							{user.isDoctor === true ? (
 								<li>
 									<NavLink to={"/appointments"}>
 										Appointments
+									</NavLink>
+								</li>
+							) : null}
+							{user.isDoctor === true ? (
+								<li>
+									<NavLink to={"/prescription_upload"}>
+										Add Prescription
 									</NavLink>
 								</li>
 							) : null}
@@ -87,20 +93,17 @@ const Navbar = () => {
 									<NavLink to={"/gallery"}>Gallery</NavLink>
 								</li>
 							) : null}
-
 							{user.isDoctor === true ? (
 								<li>
-									<NavLink to={"/discussion"}>Discussion</NavLink>
+									<a href="https://medis-cuss-ijfacs1v3-pratham-aggarwals-projects.vercel.app/">
+										Discussion
+									</a>
 								</li>
 							) : null}
-
 							<li>
 								<NavLink to={"/notifications"}>
 									Notifications
 								</NavLink>
-							</li>
-							<li>
-								<HashLink to={"/#contact"}>Contact Us</HashLink>
 							</li>
 							<li>
 								<NavLink to={"/profile"}>Profile</NavLink>
