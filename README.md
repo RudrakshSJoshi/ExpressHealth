@@ -13,8 +13,8 @@ In the current healthcare landscape, there exists a significant gap in the provi
 - Python installed on your machine
 
 ### Download AI Models
-1. Download the AI models from the provided link: [model_links.txt](https://github.com/RudrakshSJoshi/voyager_hackathon/AI%20Models/model_links.txt)
-2. Paste the downloaded models into the folder in the following directory: [path_to_folder](https://github.com/RudrakshSJoshi/voyager_hackathon/server/python/diseasedetection/user_skin)
+1. Download the AI models from the provided link: [model_links.txt](https://github.com/RudrakshSJoshi/voyager_hackathon/tree/main/AI%20Models/model_links.txt)
+2. Paste the downloaded models into the folder in the following directory: [path_to_folder](https://github.com/RudrakshSJoshi/voyager_hackathon/tree/main/server/python/diseasedetection/user%20skin)
 
 ### Client Installation
 1. Navigate to the client directory: `cd client`
