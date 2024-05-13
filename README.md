@@ -98,3 +98,6 @@ Rest procedures include:
 5. **Encourage Medical Research**: Foster research among medical professionals and students through a common discussion forum and incentivize research initiatives.
 6. **Support Medical Response**: Aid in diagnosing diseases and suggesting first aid measures to increase survival chances and support healthcare professionals.
 7. **Enhance Healthcare Efficiency**: Act as a mediator between doctors and patients, increasing throughput and reducing latency in healthcare delivery.
+8. **Pattern Analysis for Organ Failure Prediction**: Utilize the platform for pattern analysis in cases of organ failure by developing prediction models using input features such as signs of recent symptoms. This will enable early detection and intervention, potentially saving lives and improving patient outcomes.
+
+
