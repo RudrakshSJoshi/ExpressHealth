@@ -6,7 +6,40 @@ Express Health is a comprehensive healthcare platform aimed at bridging the gap 
 
 In the current healthcare landscape, there exists a significant gap in the provision of a unified platform that seamlessly integrates medical data for diagnostics, research, and patient engagement. This deficiency in available systems leads to challenges in delivering timely and precise diagnoses, ultimately depriving patients of immediate access to critical healthcare insights. Additionally, healthcare professionals and researchers encounter obstacles in accessing diverse medical data necessary for analytical studies and pattern analysis, thereby impeding progress in medical research. Moreover, prevailing healthcare systems often lack interoperability, resulting in the fragmentation of patient data across various providers and institutions. This fragmentation not only disrupts the continuity of care but also restricts the ability of healthcare professionals to make well-informed decisions based on a comprehensive patient history.
 
-## Approach
+## Installation
+
+### Prerequisites
+- Node.js and npm installed on your machine
+- Python installed on your machine
+
+### Client Installation
+1. Navigate to the client directory: `cd client`
+2. Run `npm install` to install dependencies: `npm install`
+3. Start the client-side application on port 3000: `npm start`
+
+### Server Installation
+1. Create and activate a virtual environment (optional but recommended):
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   
+2. Install required Python packages:
+   ```bash
+   pip install Flask
+   pip install opencv-python
+   pip install tensorflow
+   pip install pillow
+   pip install flask-cors
+   
+3. Start the Flask server:
+    ```bash
+   export FLASK_APP=app.py
+   flask run --host=0.0.0.0 --port=5000
+
+### Run Python Script
+1. Navigate to the directory containing the Python script: `cd path/to/directory`
+2. Run the Python script on port 8000: `python app.py`
+
 
 ## Approach
 
