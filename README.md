@@ -22,12 +22,14 @@ In the current healthcare landscape, there exists a significant gap in the provi
 3. Start the client-side application on port 3000: `npm start`
 
 ### Server Installation
-1. Create and activate a virtual environment (optional but recommended):
+1. Navigate to the server directory: `cd server`
+2. Run `npm install` to install dependencies: `npm install`
+3. Create and activate a virtual environment (optional but recommended):
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    
-2. Install required Python packages:
+4. Install required Python packages:
    ```bash
    pip install Flask
    pip install opencv-python
@@ -35,7 +37,7 @@ In the current healthcare landscape, there exists a significant gap in the provi
    pip install pillow
    pip install flask-cors
    
-3. Start the Flask server:
+5. Start the Flask server:
     ```bash
    export FLASK_APP=app.py
    flask run --host=0.0.0.0 --port=5000
