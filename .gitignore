@@ -1,1 +1,3 @@
 venv
+./client/.env
+./server/.env
