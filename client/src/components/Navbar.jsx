@@ -31,7 +31,7 @@ const Navbar = () => {
 		<header>
 			<nav className={iconActive ? "nav-active" : ""}>
 				<h2 className="nav-logo">
-					<NavLink to={"/"}>HealthBooker</NavLink>
+					<NavLink to={"/"}>SmartClinic</NavLink>
 				</h2>
 				<ul className="nav-links">
 					<li>
@@ -39,6 +39,9 @@ const Navbar = () => {
 					</li>
 					<li>
 						<NavLink to={"/doctors"}>Doctors</NavLink>
+					</li>
+					<li>
+						<NavLink to={"/chat"}>Chat</NavLink>
 					</li>
 					{token && user.isAdmin && (
 						<li>

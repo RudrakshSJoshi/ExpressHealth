@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React from "react";
 import Contact from "../components/Contact";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";

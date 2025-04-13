@@ -1,6 +1,6 @@
-# Express Health
+# SmartClinic
 
-Express Health is a comprehensive healthcare platform aimed at bridging the gap in healthcare delivery by providing a unified solution for diagnostics, research, and patient engagement.
+SmartClinic is a comprehensive healthcare platform aimed at bridging the gap in healthcare delivery by providing a unified solution for diagnostics, research, and patient engagement.
 
 ## Problem Statement
 

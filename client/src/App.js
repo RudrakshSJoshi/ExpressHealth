@@ -21,6 +21,7 @@ const Gallery = lazy(() => import("./pages/Gallery"));
 const ApplyDoctor = lazy(() => import("./pages/ApplyDoctor"));
 const Error = lazy(() => import("./pages/Error"));
 const AddPrescription = lazy(() => import("./pages/AddPrescription"));
+const ChatBot = lazy(() => import("./pages/ChatBot")); // Add this import
 
 function App() {
 	// console.log(user);
@@ -43,6 +44,14 @@ function App() {
 						/>
 						<Route path="/" element={<Home />} />
 						<Route path="/doctors" element={<Doctors />} />
+						<Route
+							path="/chat"
+							element={
+								<Protected>
+								<ChatBot />
+								</Protected>
+							}
+							/>
 						<Route
 							path="/appointments"
 							element={

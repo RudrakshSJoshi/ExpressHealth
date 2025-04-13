@@ -22,6 +22,11 @@ const Footer = () => {
 								<NavLink to={"/doctors"}>Doctors</NavLink>
 							</li>
 							<li>
+								<NavLink to={"/chat"}>
+									Chat
+								</NavLink>
+							</li>
+							<li>
 								<NavLink to={"/appointments"}>
 									Appointments
 								</NavLink>
@@ -44,7 +49,7 @@ const Footer = () => {
 						<ul>
 							<li className="github">
 								<a
-									href="https://github.com/Pratham2403"
+									href="https://github.com/RudrakshSJoshi"
 									target={"_blank"}
 									rel="noreferrer"
 								>
@@ -75,11 +80,11 @@ const Footer = () => {
 				<div className="footer-bottom">
 					Made by{" "}
 					<a
-						href="https://www.linkedin.com/in/pratham2403/"
+						href="https://www.linkedin.com/in/rudraksh-sachin-joshi-75554b202/"
 						target="_blank"
 						rel="noreferrer"
 					>
-						Pratham
+						Rudraksh, Ram and Nakshatra
 					</a>{" "}
 					© {new Date().getFullYear()}
 				</div>

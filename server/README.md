@@ -1,17 +1,17 @@
 <div id="top">
-<h1 align="center">HealthBooker 🧑‍⚕️</h1>
+<h1 align="center">SmartClinic 🧑‍⚕️</h1>
 
 <div align="center">
   <br>
-  <img src="https://img.shields.io/github/repo-size/Avinash905/HealthBooker?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/issues-closed-raw/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/last-commit/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/issues-pr/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/issues-pr-closed-raw/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/forks/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/stars/Avinash905/HealthBooker?style=for-the-badge" />
-    <img src="https://img.shields.io/github/contributors-anon/Avinash905/HealthBooker?style=for-the-badge" />
+  <img src="https://img.shields.io/github/repo-size/Avinash905/SmartClinic?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-closed-raw/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/last-commit/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-pr/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-pr-closed-raw/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/forks/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/stars/Avinash905/SmartClinic?style=for-the-badge" />
+    <img src="https://img.shields.io/github/contributors-anon/Avinash905/SmartClinic?style=for-the-badge" />
   </div>
   <br>
 
@@ -24,7 +24,7 @@ Welcome to our comprehensive healthcare platform! Our website offers a seamless 
 
 ### 🌐 Link:
 
-<h4> Live Site: https://healthbooker.onrender.com/ </h4>
+<h4> Live Site: https://SmartClinic.onrender.com/ </h4>
 
 <br>
 

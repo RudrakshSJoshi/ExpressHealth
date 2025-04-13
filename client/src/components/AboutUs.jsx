@@ -15,13 +15,7 @@ const AboutUs = () => {
           </div>
           <div className="hero-content">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam tenetur doloremque molestias repellat minus asperiores
-              in aperiam dolor, quaerat praesentium. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Voluptatibus, repudiandae! Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Provident
-              quibusdam doloremque ex? Officia atque ab dolore? Tempore totam
-              non ea!
+            Developed using a robust tech stack including Flask, React.js, TensorFlow, and MongoDB, SmartClinic not only enhances diagnostic accuracy but also fosters public health awareness and supports medical professionals through intelligent data insights. The project envisions a more connected, efficient, and informed healthcare ecosystem accessible to all.
             </p>
           </div>
         </div>
